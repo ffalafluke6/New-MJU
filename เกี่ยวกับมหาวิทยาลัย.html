@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับมหาวิทยาลัย</title>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()" align="right">☰</button>
+  </div>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/css/default.asp">
+
+</head>
+
+<body>
+
+  <h2 align="center" width="150">เกี่ยวกับมหาวิทยาลัย</h2>
+  <h3 align="center" width="150">About the university</h3>
+
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="หน้าหลัก.html">หน้าหลัก</a>
+    <a href="หน่วยงานในมหาวิทยาลัย.html">หน่วยงานในมหาวิทยาลัย</a>
+    <a href="เกี่ยวกับมหาวิทยาลัย.html">เกี่ยวกับมหาวิทยาลัย</a>
+    <a href="วิจัยและบริการวิชาการ.html">วิจัยและบริการวิชาการ</a>
+    <a href="รอบรั้วมหาวิทยาลัย.html">รอบรั้วมหาวิทยาลัย</a>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <style>
+    body {
+      background-color: rgb(122, 179, 127);
+    }
+
+    .container {
+      position: relative;
+      font-family: Arial;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 30%;
+      height: 30;
+      padding: 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+    .row {
+      margin: 10px;
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+  </style>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="ประวัติ" src="img1/13.jpg">
+        <a href="https://www.mju.ac.th/main/history/index.html">
+          <h4>ประวัติและความเป็นมา</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="โครงสร้างผู้บริหาร" src="img1/31.jpg">
+        <a href="https://www.mju.ac.th/main/About/Administrator/adminThai-1.html">
+          <h4>โครงสร้างผู้บริหาร</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="กรรมการ" src="img1/32.jpg">
+        <a href="https://council.mju.ac.th/wtms_webpageDetail.aspx?wID=38">
+          <h4>กองเลขานุการสภามหาวิทยาลัยมหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="มอบประกาศนียบัตรแก่ผู้จบหลักสูตร"
+          src="img1/33.jpg">
+        <a href="https://www.mju.ac.th/main/new_vision/">
+          <h4>ปรัชญา วิสัยทัศน์ พันธกิจ</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="VDO แนะนำมหาวิทยาลัยแม่โจ้"
+          src="img1/23.jpg">
+        <a href="https://www.youtube.com/watch?v=B6YfBmzHiaI&t=41s">
+          <h4>VDO แนะนำมหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height:100px;" alt="เพลง" src="img1/19.jpg">
+        <a href="https://www.mju.ac.th/main/MJU-song2012/MJU-song2015.php">
+          <h4>เพลงประจำมหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="กองทุนพัฒนามหาวิทยาลัยแม่โจ้"
+          src="img1/8.jpg">
+        <a href="https://funds80.mju.ac.th/">
+          <h4>กองทุนพัฒนามหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="สมาคมศิษย์เก่ามหาวิทยาลัยแม่โจ้"
+          src="img1/28.jpg">
+        <a href="http://www.alumni.mju.ac.th/">
+          <h4>สมาคมศิษย์เก่ามหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="แผนที่มหาวิทยาลัยแม่โจ้" src="img1/34.jpg">
+        <a href="https://www.mju.ac.th/main/Map-mju.html">
+          <h4>แผนที่มหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="เอกลักษณ์มหาวิทยาลัยแม่โจ้"
+          src="img1/18.jpg">
+        <a href="https://www.mju.ac.th/main/Identity/identity-mju.html">
+          <h4>เอกลักษณ์มหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;" alt="โครงสร้างหน่วยงานมหาวิทยาลัยแม่โจ้"
+          src="img1/36.jpg">
+        <a href="http://personnel.mju.ac.th/structure/index.php?show=1">
+          <h4>โครงสร้างหน่วยงานมหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+  <ul>
+    <div class="row"></div>
+    <div class="column">
+      <div class="card">
+        <img class="media-object" style="width: 200px; height: 100px;"
+          alt="แผนแม่บทการเปลี่ยนผ่าน 100 ปีมหาวิทยาลัยแม่โจ้" src="img1/37.jpg">
+        <a href="https://www.mju.ac.th/main/About_Page/Strategic%20plan-mju100y.pdf">
+          <h4>แผนแม่บทการเปลี่ยนผ่าน 100 ปีมหาวิทยาลัยแม่โจ้</h4>
+        </a>
+      </div>
+  </ul>
+
+
+
+
+</body>
+
+</html>

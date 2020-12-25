@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รอบรั้วมหาวิทยาลัย</title>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()" align="right">☰</button>
+  </div>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/css/default.asp">
+</head>
+
+<body>
+  <h2 align="center" width="150">รอบรั้วมหาวิทยาลัย</h2>
+  <h3 align="center" width="150">Around the university fence</h3>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE 10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE 10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .column {
+      -ms-flex: 50%;
+      /* IE 10 */
+      flex: 50%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+  </style>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="หน้าหลัก.html">หน้าหลัก</a>
+    <a href="หน่วยงานในมหาวิทยาลัย.html">หน่วยงานในมหาวิทยาลัย</a>
+    <a href="เกี่ยวกับมหาวิทยาลัย.html">เกี่ยวกับมหาวิทยาลัย</a>
+    <a href="วิจัยและบริการวิชาการ.html">วิจัยและบริการวิชาการ</a>
+    <a href="รอบรั้วมหาวิทยาลัย.html">รอบรั้วมหาวิทยาลัย</a>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  </head>
+
+  <body>
+    <!-- Photo -->
+    <div class="row">
+      <div class="column">
+        <img src="img1/1.jpg" style="width:100%">
+        <img src="img1/2.jpg" style="width:100%">
+        <img src="img1/3.jpg" style="width:100%">
+        <img src="img1/4.jpg" style="width:100%">
+        <img src="img1/5.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img1/6.jpg" style="width:100%">
+        <img src="img1/7.jpg" style="width:100%">
+        <img src="img1/8.jpg" style="width:100%">
+        <img src="img1/9.jpg" style="width:100%">
+        <img src="img1/10.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img1/11.jpg" style="width:100%">
+        <img src="img1/12.jpg" style="width:100%">
+        <img src="img1/13.jpg" style="width:100%">
+        <img src="img1/14.jpg" style="width:100%">
+        <img src="img1/15.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img1/16.jpg" style="width:100%">
+        <img src="img1/17.jpg" style="width:100%">
+        <img src="img1/18.jpg" style="width:100%">
+        <img src="img1/19.jpg" style="width:100%">
+        <img src="img1/20.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img1/21.jpg" style="width:100%">
+        <img src="img1/22.jpg" style="width:100%">
+        <img src="img1/23.jpg" style="width:100%">
+        <img src="img1/24.jpg" style="width:100%">
+        <img src="img1/25.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img1/26.jpg" style="width:100%">
+        <img src="img1/27.jpg" style="width:100%">
+        <img src="img1/28.jpg" style="width:100%">
+        <img src="img1/29.jpg" style="width:100%">
+        <img src="img1/30.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <script>
+      // Get the elements with class="column"
+      var elements = document.getElementsByClassName("column");
+
+      // Declare a loop variable
+      var i;
+
+      // Full-width images
+      function one() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "70%";  // IE10
+          elements[i].style.flex = "70%";
+        }
+      }
+
+      // Two images side by side
+      function two() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "70%";  // IE10
+          elements[i].style.flex = "70%";
+        }
+      }
+
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myHeader");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+  </body>
+
+</html>
